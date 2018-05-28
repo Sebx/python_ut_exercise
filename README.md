@@ -13,8 +13,10 @@ A company rents bikes under following options:
 
 The domain consists of a class that represents the "rent" entity. It has methods for each action that can be performed in the entity. Using chained methods, abstraction was simplified, making not necessary to create additional entities.
 
+An additional file containing unit testing methods has included.
+
 # Running the example.
 
 Using python 3.6 on the solution directory:
 
-python -m unittest discover
+$> python -m unittest discover
