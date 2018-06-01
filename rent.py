@@ -5,6 +5,10 @@ class Rent(object):
         self.total = 0
         self.rents = 0
 
+    @property
+    def total_amount(self):
+        return self.total
+
     def by_hour(self, qty=1):
         #charging $5 per hour
         self.total += qty * 5
@@ -29,7 +33,3 @@ class Rent(object):
             self.total -= self.total * 0.3
         else:
             raise ValueError('Promotion does not apply')
-
-    @property
-    def total_amount(self):
-        return self.total
